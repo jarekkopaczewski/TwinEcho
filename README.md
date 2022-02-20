@@ -2,6 +2,8 @@
 * [General info](#general-info)
 * [Data structure](#data-structure)
 * [Built With](#built-with)
+* [Save parameters](#save-parameters)
+* [Prepare to play](#prepare-to-play)
 * [License](#license)
 
 # About The Project
@@ -42,6 +44,37 @@ void DelayAudioProcessor::setStateInformation (const void* data, int sizeInBytes
     if (xmlState.get() != nullptr)
         if (xmlState->hasTagName(treeState.state.getType()))
             treeState.replaceState(juce::ValueTree::fromXml(*xmlState));
+}
+```
+
+## Prepare to play
+
+```cpp
+void DelayAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
+{
+    lastSampleRate = sampleRate;
+
+    mCirclarBufferLenght = MAX_DELAY_TIME * sampleRate;
+
+    if (mCircularBufferLeft == nullptr)
+    {
+        mCircularBufferLeft = new float[mCirclarBufferLenght];
+    }
+
+    juce::zeromem(mCircularBufferLeft, mCirclarBufferLenght * sizeof(float));
+
+    if (mCircularBufferRight == nullptr)
+    {
+        mCircularBufferRight = new float[mCirclarBufferLenght];
+    }
+
+    juce::zeromem(mCircularBufferRight, mCirclarBufferLenght * sizeof(float));
+
+    mCircularBufferWriterHead = 0;
+    mCircularBufferWriterHeadLeft = 0;
+
+    mDelaySmoothed = *treeState.getRawParameterValue(TIME_R_ID);
+    mDelaySmoothedLeft = *treeState.getRawParameterValue(TIME_L_ID);
 }
 ```
 
