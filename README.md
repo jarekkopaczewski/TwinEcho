@@ -1,7 +1,7 @@
 # Table of contents
 * [General info](#general-info)
 * [Data structure](#data-structure)
-* [Built With](#build-with)
+* [Built With](#built-with)
 * [Roadmap](#roadmap)
 * [License](#license)
 
