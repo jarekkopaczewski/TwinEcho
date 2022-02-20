@@ -30,9 +30,11 @@
 
 This project is a simple VST3 delay effect that works separately on the left and right channel. You can use different delay time on left and right channel, which can be also synchronized to tempo of the song by setting rhythmic division. There is also a bunch of additional effect like flanger or tap echo.
 
-To achieve a delayed effect I used the circular buffer structure which size depends on from the parameters set by the user.
+## Data structure
 
 ![Product Name Screen Shot](https://github.com/jarekkopaczewski/TwinEcho/blob/6ff12e2a9b27c65e19132080ee0411574d6aaddc/CircularBuffer.jpg)
+
+To achieve a delayed effect I used the circular buffer structure which size depends on from the parameters set by the user.
 
 ### Built With
 
