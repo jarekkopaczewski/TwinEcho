@@ -9,8 +9,10 @@
 
 ## General info
 
-|= This project is a simple VST3 delay effect that works separately on the left and right channel. You can use different delay time on left and right channel, which can be also synchronized to tempo of the song by setting rhythmic division. 
-There is also a bunch of additional effect like flanger or tap echo. =|
+<p class="text-justify">
+This project is a simple VST3 delay effect that works separately on the left and right channel. You can use different delay time on left and right channel, which can be also synchronized to tempo of the song by setting rhythmic division. 
+There is also a bunch of additional effect like flanger or tap echo.
+</p>
 
 ![Product Name Screen Shot](https://github.com/jarekkopaczewski/TwinEcho/blob/e82460d70e3dbb9e6220f74dcf8eb0781a36adcc/TwinDelay.png)
 
