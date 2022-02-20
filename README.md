@@ -2,7 +2,6 @@
 * [General info](#general-info)
 * [Data structure](#data-structure)
 * [Built With](#built-with)
-* [Roadmap](#roadmap)
 * [License](#license)
 
 # About The Project
@@ -25,13 +24,6 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 
 * [C++](https://isocpp.org/)
 * [Juce](https://juce.com/)
-
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-- [ ] Nested Feature
 
 ## License
 
