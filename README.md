@@ -1,11 +1,11 @@
-### Table of contents
+# Table of contents
 * [General info](#general-info)
 * [Data structure](#data-structure)
 * [Built With](#build-with)
 * [Built With](#build-with)
 * [License](#license)
 
-### About The Project
+# About The Project
 
 ## General info
 ![Product Name Screen Shot](https://github.com/jarekkopaczewski/TwinEcho/blob/e82460d70e3dbb9e6220f74dcf8eb0781a36adcc/TwinDelay.png)
@@ -19,7 +19,7 @@ There is also a bunch of additional effect like flanger or tap echo.
 
 To achieve a delayed effect I used the circular buffer structure which size depends on from the parameters set by the user.
 
-### Built With
+## Built With
 
 * [C++](https://isocpp.org/)
 * [Juce](https://juce.com/)
