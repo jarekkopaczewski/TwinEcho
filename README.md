@@ -2,7 +2,7 @@
 * [General info](#general-info)
 * [Data structure](#data-structure)
 * [Built With](#build-with)
-* [Built With](#build-with)
+* [Roadmap](#roadmap)
 * [License](#license)
 
 # About The Project
@@ -30,14 +30,6 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 - [ ] Feature 2
 - [ ] Feature 3
 - [ ] Nested Feature
-
-## Contributing
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
