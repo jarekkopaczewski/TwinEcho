@@ -25,6 +25,26 @@ To achieve a delayed effect I used the circular buffer structure which size depe
 * [C++](https://isocpp.org/)
 * [Juce](https://juce.com/)
 
+## Save parameters
+
+```cpp
+void DelayAudioProcessor::getStateInformation (juce::MemoryBlock& destData)
+{
+    auto state = treeState.copyState();
+    std::unique_ptr<juce::XmlElement> xml(state.createXml());
+    copyXmlToBinary(*xml, destData);
+}
+
+void DelayAudioProcessor::setStateInformation (const void* data, int sizeInBytes)
+{
+    std::unique_ptr<juce::XmlElement> xmlState(getXmlFromBinary(data, sizeInBytes));
+
+    if (xmlState.get() != nullptr)
+        if (xmlState->hasTagName(treeState.state.getType()))
+            treeState.replaceState(juce::ValueTree::fromXml(*xmlState));
+}
+```
+
 ## License
 
 Distributed under the MIT License.
