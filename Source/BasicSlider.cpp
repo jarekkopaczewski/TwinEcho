@@ -1,3 +1,4 @@
+#pragma once
 #include "BasicSlider.h"
 
 void BasicSlider::drawFrame(juce::Graphics& g, int x, int y, int width, int height, Slider& slider)
@@ -43,11 +44,9 @@ BasicSlider::BasicSlider()
 		isVerticalStrip = true;
 	}
 }
-#pragma once
 
 BasicSlider::~BasicSlider()
 {
-
 }
 
 void BasicSlider::setYourValues( int x_pos, int y_pos, int length, int height, bool isThereText,
