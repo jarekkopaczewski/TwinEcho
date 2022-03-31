@@ -47,6 +47,7 @@ void DelayAudioProcessor::setStateInformation (const void* data, int sizeInBytes
 }
 ```
 
+
 ## Prepare to play
 
 ```cpp
@@ -77,6 +78,7 @@ void DelayAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
     mDelaySmoothedLeft = *treeState.getRawParameterValue(TIME_L_ID);
 }
 ```
+
 
 ## License
 
